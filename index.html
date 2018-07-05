@@ -55,7 +55,8 @@ function callback() {
    //window._pcq.push(['triggerOptIn',{subscriberSegment: 'homepage123', modal: {text: 'Get instant alerts from our website. Please subscribe.', blackenBackground: true}}]);
     //window._pcq.push(['triggerOptIn', {subscriberSegment: 'homepage12'}]); 
     
-   _pcq.push(['triggerOptIn']);
+   //_pcq.push(['triggerOptIn']);
+    window._pcq.push(['triggerOptIn',{subscriberSegment: 'homepage', httpWindowOnly: true}]);
     
         _pcq.push(['addSubscriberToSegment', 'segmenttest1', callbackForAddToSegment]);
     
