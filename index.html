@@ -53,7 +53,9 @@ function callback() {
     console.log(pushcrew.subscriberId);
     
    //window._pcq.push(['triggerOptIn',{subscriberSegment: 'homepage', modal: {text: 'Get instant alerts from our website. Please subscribe.', blackenBackground: false}}]);
-    window._pcq.push(['triggerOptIn', {subscriberSegment: 'homepage'}]); 
+    //window._pcq.push(['triggerOptIn', {subscriberSegment: 'homepage'}]); 
+    
+   _pcq.push(['triggerOptIn']);
    
     
 //_pcq.push(['noTrigger',true]); //disables automatic opt-in
