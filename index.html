@@ -14,6 +14,7 @@ function callbackFunctionOnSuccessfulSubscription(subscriberId, values) {
     console.log(values.status); // SUBSCRIBED or ALREADYSUBSCRIBED
     console.log(values.message) // 'User has subscribed to push notifications.' or 'User is already subscribed to push notifications.'
     console.log('Now you may run code which should be executed once user gets successfully subscribed.');
+        _pcq.push(['addSubscriberToSegment', 'homepage', callbackForAddToSegment]);
 }
               
               window._pcq = window._pcq || [];
